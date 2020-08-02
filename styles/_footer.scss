@@ -1,0 +1,70 @@
+footer {
+  background-color: $secondary-color;
+  z-index: 10;
+
+  .footer {
+    min-height: 15rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .descripcion-footer {
+      width: 100%;
+      padding: 4rem 2rem;
+      position: relative;
+      color: #fff;
+      margin: 2rem 0;
+      text-align: center;
+
+
+      &::before,
+      &::after {
+        content: "";
+        width: 90%;
+        height: .1rem;
+        display: block;
+        background-color: $primary-color;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+      }
+
+      &::before {
+        top: -2rem;
+        margin-top: 4rem;
+      }
+
+      &::after {
+        bottom: -2rem;
+        margin-bottom: 4rem;
+      }
+    }
+
+
+    .mapa {
+      height: 30rem;
+      width: 100%;
+      margin: 2rem 0;
+    }
+
+    .redes {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin: 2rem 0;
+
+      i {
+        // background-color: $primary-color;
+        color: #fff;
+        font-size: 4rem;
+        // box-shadow: 0 0 1rem $primary-color;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
